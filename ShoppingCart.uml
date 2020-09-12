@@ -1,0 +1,1033 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLLabProfile="http:///schemas/UMLLabProfile/NS/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/UMLLabProfile/NS/0 pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile">
+  <uml:Model xmi:id="_oAzzoPGBEeq0et1cZ_IYHA" name="ShoppingCart">
+    <eAnnotations xmi:id="_oK_DUPGBEeq0et1cZ_IYHA" source="http://ns.yatta.de/umllab">
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_oK_qYPGBEeq0et1cZ_IYHA" source="codegen">
+        <details xmi:id="_oLARcPGBEeq0et1cZ_IYHA" key="codegenDirectory" value="/ShoppingCart/src"/>
+        <details xmi:id="_qMMGEPGBEeq0et1cZ_IYHA" key="AssociatedSourceCode" value="/ShoppingCart/src/br/edu/ifpb/shoppingcart/entity/Address.java;506925334/1;/ShoppingCart/src/br/edu/ifpb/shoppingcart/entity/AddressType.java;2171472026/1;/ShoppingCart/src/br/edu/ifpb/shoppingcart/entity/Bank.java;3998112831/1;/ShoppingCart/src/br/edu/ifpb/shoppingcart/entity/Customer.java;4263334435/1;/ShoppingCart/src/br/edu/ifpb/shoppingcart/entity/Gender.java;1235039272/1;/ShoppingCart/src/br/edu/ifpb/shoppingcart/entity/Item.java;3602635465/1;/ShoppingCart/src/br/edu/ifpb/shoppingcart/entity/PaymentMethod.java;2467853744/1;/ShoppingCart/src/br/edu/ifpb/shoppingcart/entity/Product.java;446466008/1;/ShoppingCart/src/br/edu/ifpb/shoppingcart/service/CartService.java;1976255073/1;/ShoppingCart/src/br/edu/ifpb/shoppingcart/service/PaymentService.java;2090307567/1;/ShoppingCart/test/br/edu/ifpb/shoppingcart/service/CartServiceTest.java;1947482828/1;/ShoppingCart/test/br/edu/ifpb/shoppingcart/service/PaymentServiceTest.java;698240008/1;/ShoppingCart/src/br/edu/ifpb/shoppingcart/entity/ShoppingCart.java;3055251259/1;/ShoppingCart/test/br/edu/ifpb/shoppingcart/entity/BankTest.java;391728926/1;/ShoppingCart/test/br/edu/ifpb/shoppingcart/entity/ShoppingCartTest.java;3983347719/1;/ShoppingCart/test/br/edu/ifpb/shoppingcart/suite/ShoppingCartSTestSuite.java;4293201439/1;"/>
+      </contents>
+    </eAnnotations>
+    <elementImport xmi:id="_pDjDAPGBEeq0et1cZ_IYHA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </elementImport>
+    <elementImport xmi:id="_pDjqEPGBEeq0et1cZ_IYHA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+    </elementImport>
+    <elementImport xmi:id="_pDjqEfGBEeq0et1cZ_IYHA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </elementImport>
+    <elementImport xmi:id="_pDkRIPGBEeq0et1cZ_IYHA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </elementImport>
+    <elementImport xmi:id="_pDkRIfGBEeq0et1cZ_IYHA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+    </elementImport>
+    <elementImport xmi:id="_pDkRIvGBEeq0et1cZ_IYHA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </elementImport>
+    <elementImport xmi:id="_pDk4MPGBEeq0et1cZ_IYHA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </elementImport>
+    <elementImport xmi:id="_pDk4MfGBEeq0et1cZ_IYHA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+    </elementImport>
+    <elementImport xmi:id="_pDmGUPGBEeq0et1cZ_IYHA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </elementImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_o_d0QPGBEeq0et1cZ_IYHA" name="br">
+      <packagedElement xmi:type="uml:Package" xmi:id="_o_ebUPGBEeq0et1cZ_IYHA" name="edu">
+        <packagedElement xmi:type="uml:Package" xmi:id="_o_fCYPGBEeq0et1cZ_IYHA" name="ifpb">
+          <packagedElement xmi:type="uml:Package" xmi:id="_o_fCYfGBEeq0et1cZ_IYHA" name="shoppingcart">
+            <packagedElement xmi:type="uml:Package" xmi:id="_o__YsPGBEeq0et1cZ_IYHA" name="entity">
+              <packagedElement xmi:type="uml:Class" xmi:id="_pDYq8PGBEeq0et1cZ_IYHA" name="Address">
+                <ownedAttribute xmi:id="_pS_NMPGBEeq0et1cZ_IYHA" name="street" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_pTAbUPGBEeq0et1cZ_IYHA" name="number" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_pTCQgPGBEeq0et1cZ_IYHA" name="zipCode" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_pTDeoPGBEeq0et1cZ_IYHA" name="description" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedAttribute>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_pUFZYPGBEeq0et1cZ_IYHA" name="Address" specification="_pDqXwPGBEeq0et1cZ_IYHA">
+                  <ownedParameter xmi:id="_pUGAcPGBEeq0et1cZ_IYHA" name="street">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_pUGAcfGBEeq0et1cZ_IYHA" name="number">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_pUGAcvGBEeq0et1cZ_IYHA" name="zipCode">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_pUGAc_GBEeq0et1cZ_IYHA" type="_pDYq8PGBEeq0et1cZ_IYHA" direction="return"/>
+                  <language>java</language>
+                  <body>super();&#xD;
+		this.street = street;&#xD;
+		this.number = number;&#xD;
+		this.zipCode = zipCode;&#xD;
+	</body>
+                </ownedBehavior>
+                <ownedOperation xmi:id="_pDqXwPGBEeq0et1cZ_IYHA" name="Address" method="_pUFZYPGBEeq0et1cZ_IYHA">
+                  <eAnnotations xmi:id="_pDuCIPGBEeq0et1cZ_IYHA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                    <details xmi:id="_pDuCIfGBEeq0et1cZ_IYHA" key="create"/>
+                  </eAnnotations>
+                  <ownedParameter xmi:id="_pDq-0PGBEeq0et1cZ_IYHA" name="street">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_pDq-0fGBEeq0et1cZ_IYHA" name="number">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_pDrl4PGBEeq0et1cZ_IYHA" name="zipCode">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_pDupMPGBEeq0et1cZ_IYHA" type="_pDYq8PGBEeq0et1cZ_IYHA" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Enumeration" xmi:id="_pD5oUPGBEeq0et1cZ_IYHA" name="AddressType">
+                <ownedLiteral xmi:id="_pD8roPGBEeq0et1cZ_IYHA" name="HOME"/>
+                <ownedLiteral xmi:id="_pD8rofGBEeq0et1cZ_IYHA" name="WORK"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_pD9SsPGBEeq0et1cZ_IYHA" name="Bank">
+                <ownedAttribute xmi:id="_pTEswPGBEeq0et1cZ_IYHA" name="customer" visibility="private" type="_pEXiYPGBEeq0et1cZ_IYHA" association="_pU1AQPGBEeq0et1cZ_IYHA"/>
+                <ownedAttribute xmi:id="_pTF64PGBEeq0et1cZ_IYHA" name="paymentMethod" visibility="private" type="_pFlDUPGBEeq0et1cZ_IYHA"/>
+                <ownedAttribute xmi:id="_pTGh8PGBEeq0et1cZ_IYHA" name="wallet" visibility="private" type="_pRDTgfGBEeq0et1cZ_IYHA" association="_pU21cfGBEeq0et1cZ_IYHA"/>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_pUMuIPGBEeq0et1cZ_IYHA" name="Bank" specification="_pSlkkPGBEeq0et1cZ_IYHA">
+                  <ownedParameter xmi:id="_pUMuIfGBEeq0et1cZ_IYHA" name="customer" type="_pEXiYPGBEeq0et1cZ_IYHA"/>
+                  <ownedParameter xmi:id="_pUMuIvGBEeq0et1cZ_IYHA" name="cash" type="_pQ9z8PGBEeq0et1cZ_IYHA"/>
+                  <ownedParameter xmi:id="_pUMuI_GBEeq0et1cZ_IYHA" type="_pD9SsPGBEeq0et1cZ_IYHA" direction="return"/>
+                  <language>java</language>
+                  <body>super();&#xD;
+		this.customer = customer;	&#xD;
+		wallet = new HashMap&lt;Integer, BigDecimal>();&#xD;
+		wallet.put(customer.getId(),cash);&#xD;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_pUNVMPGBEeq0et1cZ_IYHA" name="getCustomerCredit" specification="_pRHk8PGBEeq0et1cZ_IYHA">
+                  <ownedParameter xmi:id="_pUNVMfGBEeq0et1cZ_IYHA" name="customer" type="_pEXiYPGBEeq0et1cZ_IYHA"/>
+                  <ownedParameter xmi:id="_pUNVMvGBEeq0et1cZ_IYHA" type="_pQ9z8PGBEeq0et1cZ_IYHA" direction="return"/>
+                  <language>java</language>
+                  <body>return wallet.get(customer.getId());&#xD;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_pUN8QPGBEeq0et1cZ_IYHA" name="withdraw" specification="_pSoA0PGBEeq0et1cZ_IYHA">
+                  <ownedParameter xmi:id="_pUN8QfGBEeq0et1cZ_IYHA" name="amount" type="_pQ9z8PGBEeq0et1cZ_IYHA"/>
+                  <ownedParameter xmi:id="_pUN8QvGBEeq0et1cZ_IYHA" type="_pQ9z8PGBEeq0et1cZ_IYHA" direction="return"/>
+                  <language>java</language>
+                  <body>BigDecimal value =  wallet.get(customer.getId()).subtract(amount);&#xD;
+		wallet.remove(customer.getId());&#xD;
+		wallet.put(customer.getId(), value);&#xD;
+		return wallet.get(customer.getId());&#xD;
+		&#xD;
+</body>
+                </ownedBehavior>
+                <ownedOperation xmi:id="_pRHk8PGBEeq0et1cZ_IYHA" name="getCustomerCredit" method="_pUNVMPGBEeq0et1cZ_IYHA">
+                  <ownedParameter xmi:id="_pRHk8fGBEeq0et1cZ_IYHA" name="customer" type="_pEXiYPGBEeq0et1cZ_IYHA"/>
+                  <ownedParameter xmi:id="_pSnZwPGBEeq0et1cZ_IYHA" type="_pQ9z8PGBEeq0et1cZ_IYHA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_pSlkkPGBEeq0et1cZ_IYHA" name="Bank" method="_pUMuIPGBEeq0et1cZ_IYHA">
+                  <eAnnotations xmi:id="_pSmLofGBEeq0et1cZ_IYHA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                    <details xmi:id="_pSmysPGBEeq0et1cZ_IYHA" key="create"/>
+                  </eAnnotations>
+                  <ownedParameter xmi:id="_pSlkkfGBEeq0et1cZ_IYHA" name="customer" type="_pEXiYPGBEeq0et1cZ_IYHA"/>
+                  <ownedParameter xmi:id="_pSmLoPGBEeq0et1cZ_IYHA" name="cash" type="_pQ9z8PGBEeq0et1cZ_IYHA"/>
+                  <ownedParameter xmi:id="_pSmysfGBEeq0et1cZ_IYHA" type="_pD9SsPGBEeq0et1cZ_IYHA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_pSoA0PGBEeq0et1cZ_IYHA" name="withdraw" method="_pUN8QPGBEeq0et1cZ_IYHA">
+                  <ownedParameter xmi:id="_pSoA0fGBEeq0et1cZ_IYHA" name="amount" type="_pQ9z8PGBEeq0et1cZ_IYHA"/>
+                  <ownedParameter xmi:id="_pSon4PGBEeq0et1cZ_IYHA" type="_pQ9z8PGBEeq0et1cZ_IYHA" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_pEXiYPGBEeq0et1cZ_IYHA" name="Customer">
+                <ownedAttribute xmi:id="_pTJlQPGBEeq0et1cZ_IYHA" name="id" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_pTLacPGBEeq0et1cZ_IYHA" name="name" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_pTMBgPGBEeq0et1cZ_IYHA" name="age" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_pTNPoPGBEeq0et1cZ_IYHA" name="gender" visibility="private" type="_pFZdIPGBEeq0et1cZ_IYHA"/>
+                <ownedAttribute xmi:id="_pTOdwPGBEeq0et1cZ_IYHA" name="addresses" visibility="private" type="_pDYq8PGBEeq0et1cZ_IYHA" association="_pU4qoPGBEeq0et1cZ_IYHA">
+                  <qualifier xmi:id="_pTQS8PGBEeq0et1cZ_IYHA" type="_pD5oUPGBEeq0et1cZ_IYHA"/>
+                </ownedAttribute>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_pUPKYPGBEeq0et1cZ_IYHA" name="equals" specification="_pSs5UfGBEeq0et1cZ_IYHA">
+                  <ownedParameter xmi:id="_pUPKYfGBEeq0et1cZ_IYHA" name="obj" type="_pSrEIfGBEeq0et1cZ_IYHA"/>
+                  <ownedParameter xmi:id="_pUPKYvGBEeq0et1cZ_IYHA" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>if (this == obj)&#xD;
+			return true;&#xD;
+		if (obj == null)&#xD;
+			return false;&#xD;
+		if (getClass() != obj.getClass())&#xD;
+			return false;&#xD;
+		Customer other = (Customer) obj;&#xD;
+		if (id != other.id)&#xD;
+			return false;&#xD;
+		return true;&#xD;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_pUPxcPGBEeq0et1cZ_IYHA" name="hashCode" specification="_pEeQEPGBEeq0et1cZ_IYHA">
+                  <ownedParameter xmi:id="_pUPxcfGBEeq0et1cZ_IYHA" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>final int prime = 31;&#xD;
+		int result = 1;&#xD;
+		result = prime * result + id;&#xD;
+		return result;&#xD;
+	</body>
+                </ownedBehavior>
+                <ownedOperation xmi:id="_pEeQEPGBEeq0et1cZ_IYHA" name="hashCode" method="_pUPxcPGBEeq0et1cZ_IYHA">
+                  <ownedParameter xmi:id="_pEfeMPGBEeq0et1cZ_IYHA" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_pSs5UfGBEeq0et1cZ_IYHA" name="equals" method="_pUPKYPGBEeq0et1cZ_IYHA">
+                  <ownedParameter xmi:id="_pSs5UvGBEeq0et1cZ_IYHA" name="obj" type="_pSrEIfGBEeq0et1cZ_IYHA"/>
+                  <ownedParameter xmi:id="_pStgYPGBEeq0et1cZ_IYHA" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                  </ownedParameter>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Enumeration" xmi:id="_pFZdIPGBEeq0et1cZ_IYHA" name="Gender">
+                <ownedLiteral xmi:id="_pFbSUPGBEeq0et1cZ_IYHA" name="MALE"/>
+                <ownedLiteral xmi:id="_pFbSUfGBEeq0et1cZ_IYHA" name="FEMALE"/>
+                <ownedLiteral xmi:id="_pFb5YPGBEeq0et1cZ_IYHA" name="OTHER"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_pFcgcPGBEeq0et1cZ_IYHA" name="Item">
+                <ownedAttribute xmi:id="_pTQ6APGBEeq0et1cZ_IYHA" name="product" visibility="private" type="_pFnfkPGBEeq0et1cZ_IYHA" association="_pU6f0PGBEeq0et1cZ_IYHA"/>
+                <ownedAttribute xmi:id="_pTSIIPGBEeq0et1cZ_IYHA" name="quantity" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedAttribute>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Enumeration" xmi:id="_pFlDUPGBEeq0et1cZ_IYHA" name="PaymentMethod">
+                <ownedLiteral xmi:id="_pFmRcPGBEeq0et1cZ_IYHA" name="CREDITCARD"/>
+                <ownedLiteral xmi:id="_pFmRcfGBEeq0et1cZ_IYHA" name="DEBITCARD"/>
+                <ownedLiteral xmi:id="_pFm4gPGBEeq0et1cZ_IYHA" name="IFPAY"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_pFnfkPGBEeq0et1cZ_IYHA" name="Product">
+                <ownedAttribute xmi:id="_pTTWQPGBEeq0et1cZ_IYHA" name="name" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_pTT9UPGBEeq0et1cZ_IYHA" name="price" visibility="private" type="_pQ9z8PGBEeq0et1cZ_IYHA"/>
+                <ownedAttribute xmi:id="_pTUkYPGBEeq0et1cZ_IYHA" name="description" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedAttribute>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_pHqG8PGBEeq0et1cZ_IYHA" name="ShoppingCart">
+                <ownedAttribute xmi:id="_pTvbIPGBEeq0et1cZ_IYHA" name="items" type="_pFcgcPGBEeq0et1cZ_IYHA" isOrdered="true" isReadOnly="true" association="_pVQeEfGBEeq0et1cZ_IYHA">
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pTvbIfGBEeq0et1cZ_IYHA" value="*"/>
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_pTwpQPGBEeq0et1cZ_IYHA" value="new ArrayList&lt;Item>()"/>
+                </ownedAttribute>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_pUZicPGBEeq0et1cZ_IYHA" name="add" specification="_pSOYMPGBEeq0et1cZ_IYHA">
+                  <ownedParameter xmi:id="_pUZicfGBEeq0et1cZ_IYHA" name="product" type="_pFnfkPGBEeq0et1cZ_IYHA"/>
+                  <ownedParameter xmi:id="_pUZicvGBEeq0et1cZ_IYHA" name="quantity">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>if(product != null &amp;&amp; quantity > 0)&#xD;
+		items.add(new Item(product,quantity));			&#xD;
+		</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_pUaJgPGBEeq0et1cZ_IYHA" name="updateQuantity" specification="_pSQ0cPGBEeq0et1cZ_IYHA">
+                  <ownedParameter xmi:id="_pUaJgfGBEeq0et1cZ_IYHA" name="product" type="_pFnfkPGBEeq0et1cZ_IYHA"/>
+                  <ownedParameter xmi:id="_pUaJgvGBEeq0et1cZ_IYHA" name="quantity">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_pUaJg_GBEeq0et1cZ_IYHA" direction="return">
+                    <name xsi:nil="true"/>
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>Item item = this.findProduct(product);&#xD;
+		if(item != null){			&#xD;
+			//this.findProduct(product).setQuantity(item.getQuantity()+quantity);&#xD;
+			item.setQuantity(quantity);			&#xD;
+			return true;&#xD;
+		}&#xD;
+		return false;&#xD;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_pUaJhPGBEeq0et1cZ_IYHA" name="remove" specification="_pSSCkPGBEeq0et1cZ_IYHA">
+                  <ownedParameter xmi:id="_pUaJhfGBEeq0et1cZ_IYHA" name="product" type="_pFnfkPGBEeq0et1cZ_IYHA"/>
+                  <language>java</language>
+                  <body>//com Lambda ficaria:&#xD;
+		//items.remove(findProduct(product));&#xD;
+		&#xD;
+		for(Item item:items) {&#xD;
+			if(item.getProduct().equals(product)) {&#xD;
+			   Item found = item;&#xD;
+			   items.remove(found);&#xD;
+			   break;&#xD;
+			}&#xD;
+&#xD;
+		}&#xD;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_pUawkPGBEeq0et1cZ_IYHA" name="getTotal" specification="_pHtKQPGBEeq0et1cZ_IYHA">
+                  <ownedParameter xmi:id="_pUawkfGBEeq0et1cZ_IYHA" type="_pQ9z8PGBEeq0et1cZ_IYHA" direction="return">
+                    <name xsi:nil="true"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>BigDecimal total = BigDecimal.ZERO;&#xD;
+		for (Item item : items) {&#xD;
+		total  = total.add(item.getProduct().getPrice().multiply(new BigDecimal(item.getQuantity())));&#xD;
+		}&#xD;
+		return total;&#xD;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_pUb-sPGBEeq0et1cZ_IYHA" name="findProduct" specification="_pSTQsPGBEeq0et1cZ_IYHA">
+                  <ownedParameter xmi:id="_pUb-sfGBEeq0et1cZ_IYHA" name="product" type="_pFnfkPGBEeq0et1cZ_IYHA"/>
+                  <ownedParameter xmi:id="_pUb-svGBEeq0et1cZ_IYHA" type="_pFcgcPGBEeq0et1cZ_IYHA" direction="return">
+                    <name xsi:nil="true"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>return items.stream().filter(i -> i.getProduct().equals(product)).findAny().get();&#xD;
+	</body>
+                </ownedBehavior>
+                <ownedOperation xmi:id="_pHtKQPGBEeq0et1cZ_IYHA" name="getTotal" method="_pUawkPGBEeq0et1cZ_IYHA">
+                  <ownedParameter xmi:id="_pS34cPGBEeq0et1cZ_IYHA" type="_pQ9z8PGBEeq0et1cZ_IYHA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_pSOYMPGBEeq0et1cZ_IYHA" name="add" method="_pUZicPGBEeq0et1cZ_IYHA">
+                  <ownedParameter xmi:id="_pSPmUPGBEeq0et1cZ_IYHA" name="product" type="_pFnfkPGBEeq0et1cZ_IYHA"/>
+                  <ownedParameter xmi:id="_pSPmUfGBEeq0et1cZ_IYHA" name="quantity">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_pSQ0cPGBEeq0et1cZ_IYHA" name="updateQuantity" method="_pUaJgPGBEeq0et1cZ_IYHA">
+                  <ownedParameter xmi:id="_pSQ0cfGBEeq0et1cZ_IYHA" name="product" type="_pFnfkPGBEeq0et1cZ_IYHA"/>
+                  <ownedParameter xmi:id="_pSQ0cvGBEeq0et1cZ_IYHA" name="quantity">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_pSRbgPGBEeq0et1cZ_IYHA" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_pSSCkPGBEeq0et1cZ_IYHA" name="remove" method="_pUaJhPGBEeq0et1cZ_IYHA">
+                  <ownedParameter xmi:id="_pSSCkfGBEeq0et1cZ_IYHA" name="product" type="_pFnfkPGBEeq0et1cZ_IYHA"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_pSTQsPGBEeq0et1cZ_IYHA" name="findProduct" method="_pUb-sPGBEeq0et1cZ_IYHA">
+                  <ownedParameter xmi:id="_pSTQsfGBEeq0et1cZ_IYHA" name="product" type="_pFnfkPGBEeq0et1cZ_IYHA"/>
+                  <ownedParameter xmi:id="_pST3wPGBEeq0et1cZ_IYHA" type="_pFcgcPGBEeq0et1cZ_IYHA" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_pU1AQPGBEeq0et1cZ_IYHA" name="" memberEnd="_pU1AQfGBEeq0et1cZ_IYHA _pTEswPGBEeq0et1cZ_IYHA">
+                <ownedEnd xmi:id="_pU1AQfGBEeq0et1cZ_IYHA" name="" type="_pD9SsPGBEeq0et1cZ_IYHA" association="_pU1AQPGBEeq0et1cZ_IYHA"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_pU21cfGBEeq0et1cZ_IYHA" name="" memberEnd="_pU21cvGBEeq0et1cZ_IYHA _pTGh8PGBEeq0et1cZ_IYHA">
+                <ownedEnd xmi:id="_pU21cvGBEeq0et1cZ_IYHA" name="" type="_pD9SsPGBEeq0et1cZ_IYHA" association="_pU21cfGBEeq0et1cZ_IYHA"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_pU4qoPGBEeq0et1cZ_IYHA" name="" memberEnd="_pU4qofGBEeq0et1cZ_IYHA _pTOdwPGBEeq0et1cZ_IYHA">
+                <ownedEnd xmi:id="_pU4qofGBEeq0et1cZ_IYHA" name="" type="_pEXiYPGBEeq0et1cZ_IYHA" association="_pU4qoPGBEeq0et1cZ_IYHA"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_pU6f0PGBEeq0et1cZ_IYHA" name="" memberEnd="_pU6f0fGBEeq0et1cZ_IYHA _pTQ6APGBEeq0et1cZ_IYHA">
+                <ownedEnd xmi:id="_pU6f0fGBEeq0et1cZ_IYHA" name="" type="_pFcgcPGBEeq0et1cZ_IYHA" association="_pU6f0PGBEeq0et1cZ_IYHA"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_pVQeEfGBEeq0et1cZ_IYHA" name="" memberEnd="_pVQeEvGBEeq0et1cZ_IYHA _pTvbIPGBEeq0et1cZ_IYHA">
+                <ownedEnd xmi:id="_pVQeEvGBEeq0et1cZ_IYHA" name="" type="_pHqG8PGBEeq0et1cZ_IYHA" association="_pVQeEfGBEeq0et1cZ_IYHA"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_dUZxgPIUEeqcDOBnFxLjAg" name="BankTest">
+                <eAnnotations xmi:id="_dUaYkPIUEeqcDOBnFxLjAg" source="http://ns.yatta.de/umllab">
+                  <contents xmi:type="ecore:EAnnotation" xmi:id="_dUa_oPIUEeqcDOBnFxLjAg" source="codegen">
+                    <details xmi:id="_dUa_ofIUEeqcDOBnFxLjAg" key="codegenDirectory" value="/ShoppingCart/test"/>
+                  </contents>
+                </eAnnotations>
+                <ownedAttribute xmi:id="_dUyzEPIUEeqcDOBnFxLjAg" name="operator" visibility="package" type="_pD9SsPGBEeq0et1cZ_IYHA" association="_dU8kEPIUEeqcDOBnFxLjAg"/>
+                <ownedAttribute xmi:id="_dU0oQPIUEeqcDOBnFxLjAg" name="customer" visibility="package" type="_pEXiYPGBEeq0et1cZ_IYHA" association="_dU-ZQfIUEeqcDOBnFxLjAg"/>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_dU3EgPIUEeqcDOBnFxLjAg" name="initialize" specification="_dUcNwPIUEeqcDOBnFxLjAg">
+                  <language>java</language>
+                  <body>customer = new Customer();&#xD;
+		customer.setId(1);&#xD;
+		customer.setName(&quot;João&quot;);&#xD;
+		this.operator = new Bank(customer,new BigDecimal(&quot;10000.00&quot;));&#xD;
+		this.operator.setPaymentMethod(PaymentMethod.CREDITCARD);&#xD;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_dU4SoPIUEeqcDOBnFxLjAg" name="testaCreditoDoCliente" specification="_dUeqAPIUEeqcDOBnFxLjAg">
+                  <language>java</language>
+                  <body>assertNotNull(this.operator.getCustomer());&#xD;
+		assertEquals(new BigDecimal(&quot;10000.00&quot;), this.operator.getCustomerCredit(customer));&#xD;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_dU4SofIUEeqcDOBnFxLjAg" name="testaSaqueDoPagamento" specification="_dUgfMfIUEeqcDOBnFxLjAg">
+                  <language>java</language>
+                  <body>this.operator.withdraw(new BigDecimal(&quot;5000.00&quot;));&#xD;
+		&#xD;
+		assertEquals(new BigDecimal(&quot;5000.00&quot;),this.operator.getCustomerCredit(customer));&#xD;
+	</body>
+                </ownedBehavior>
+                <ownedOperation xmi:id="_dUcNwPIUEeqcDOBnFxLjAg" name="initialize" method="_dU3EgPIUEeqcDOBnFxLjAg"/>
+                <ownedOperation xmi:id="_dUeqAPIUEeqcDOBnFxLjAg" name="testaCreditoDoCliente" method="_dU4SoPIUEeqcDOBnFxLjAg"/>
+                <ownedOperation xmi:id="_dUgfMfIUEeqcDOBnFxLjAg" name="testaSaqueDoPagamento" method="_dU4SofIUEeqcDOBnFxLjAg"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_dU8kEPIUEeqcDOBnFxLjAg" name="" memberEnd="_dU8kEfIUEeqcDOBnFxLjAg _dUyzEPIUEeqcDOBnFxLjAg">
+                <ownedEnd xmi:id="_dU8kEfIUEeqcDOBnFxLjAg" name="" type="_dUZxgPIUEeqcDOBnFxLjAg" association="_dU8kEPIUEeqcDOBnFxLjAg"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_dU-ZQfIUEeqcDOBnFxLjAg" name="" memberEnd="_dU-ZQvIUEeqcDOBnFxLjAg _dU0oQPIUEeqcDOBnFxLjAg">
+                <ownedEnd xmi:id="_dU-ZQvIUEeqcDOBnFxLjAg" name="" type="_dUZxgPIUEeqcDOBnFxLjAg" association="_dU-ZQfIUEeqcDOBnFxLjAg"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_eeciwPIUEeqcDOBnFxLjAg" name="ShoppingCartTest">
+                <eAnnotations xmi:id="_eeciwfIUEeqcDOBnFxLjAg" source="http://ns.yatta.de/umllab">
+                  <contents xmi:type="ecore:EAnnotation" xmi:id="_eeciwvIUEeqcDOBnFxLjAg" source="codegen">
+                    <details xmi:id="_eeciw_IUEeqcDOBnFxLjAg" key="codegenDirectory" value="/ShoppingCart/test"/>
+                  </contents>
+                </eAnnotations>
+                <ownedAttribute xmi:id="_ee5OsPIUEeqcDOBnFxLjAg" name="cart" visibility="package" type="_pHqG8PGBEeq0et1cZ_IYHA" association="_efCYoPIUEeqcDOBnFxLjAg">
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_ee5OsfIUEeqcDOBnFxLjAg" value="new ShoppingCart()"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_ee7q8fIUEeqcDOBnFxLjAg" name="product" visibility="package" type="_pFnfkPGBEeq0et1cZ_IYHA" association="_efEN0fIUEeqcDOBnFxLjAg">
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_ee8SAPIUEeqcDOBnFxLjAg" value="new Product()"/>
+                </ownedAttribute>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ee-HMPIUEeqcDOBnFxLjAg" name="initialize" specification="_eedw4PIUEeqcDOBnFxLjAg">
+                  <language>java</language>
+                  <body>product.setName(&quot;LEGO Duplo&quot;);&#xD;
+		product.setDescription(&quot;Blocks for kids creativity development.&quot;);&#xD;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ee-HMfIUEeqcDOBnFxLjAg" name="finalize" specification="_eefmEPIUEeqcDOBnFxLjAg">
+                  <language>java</language>
+                  <body>cart.getItems().clear();&#xD;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ee-HMvIUEeqcDOBnFxLjAg" name="testaValorCarrinhoVazio" specification="_eeg0MvIUEeqcDOBnFxLjAg">
+                  <language>java</language>
+                  <body>assertTrue(cart.getItems().size() == 0);&#xD;
+		assertEquals(BigDecimal.ZERO, cart.getTotal());&#xD;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ee-uQPIUEeqcDOBnFxLjAg" name="testaProdutoInseridoComSucesso" specification="_eeiCUvIUEeqcDOBnFxLjAg">
+                  <language>java</language>
+                  <body>cart.add(product, 10);&#xD;
+		assertTrue(cart.getItems().size() == 1);&#xD;
+		assertEquals(&quot;LEGO Duplo&quot;, cart.getItems().get(0).getProduct().getName());&#xD;
+		assertTrue(cart.getItems().get(0).getQuantity() == 10);&#xD;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ee-uQfIUEeqcDOBnFxLjAg" name="testaProdutoAtualizado" specification="_eejQcvIUEeqcDOBnFxLjAg">
+                  <language>java</language>
+                  <body>cart.add(product, 1);&#xD;
+		cart.updateQuantity(product, 12);&#xD;
+		assertTrue(cart.getItems().size() == 1);&#xD;
+		assertTrue(cart.getItems().get(0).getQuantity() == 12);&#xD;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ee-uQvIUEeqcDOBnFxLjAg" name="testaProdutoRemovido" specification="_eekekvIUEeqcDOBnFxLjAg">
+                  <language>java</language>
+                  <body>Product p = new Product();&#xD;
+		p.setName(&quot;Hot Wheels&quot;);	&#xD;
+		&#xD;
+		cart.add(product, 10);&#xD;
+		cart.add(p, 2);&#xD;
+		&#xD;
+		int tamanhoAntesRemocao = cart.getItems().size();&#xD;
+&#xD;
+		cart.remove(p);&#xD;
+&#xD;
+		assertTrue(cart.getItems().size() &lt; tamanhoAntesRemocao);&#xD;
+		assertEquals(&quot;LEGO Duplo&quot;,cart.getItems().get(0).getProduct().getName());&#xD;
+		&#xD;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ee-uQ_IUEeqcDOBnFxLjAg" name="testaValorTotalDaCompra" specification="_eelssvIUEeqcDOBnFxLjAg">
+                  <language>java</language>
+                  <body>Product p = new Product();&#xD;
+		p.setName(&quot;Hot Wheels&quot;);&#xD;
+		cart.add(product, 10);&#xD;
+		cart.add(p, 2);&#xD;
+		&#xD;
+		product.setPrice(new BigDecimal(200.00));&#xD;
+		p.setPrice(new BigDecimal(150.00));&#xD;
+		assertTrue(cart.getItems().size() == 2);&#xD;
+		assertEquals(new BigDecimal(2300.00), cart.getTotal());&#xD;
+		&#xD;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ee_VUPIUEeqcDOBnFxLjAg" name="testaCarrinhoComQuantitativoNegativo" specification="_eem60vIUEeqcDOBnFxLjAg">
+                  <language>java</language>
+                  <body>Product p = new Product();&#xD;
+		p.setName(&quot;Hot Wheels&quot;);&#xD;
+		cart.add(product, -1);&#xD;
+		&#xD;
+		assertTrue(cart.getItems().size() == 0);&#xD;
+		&#xD;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ee_VUfIUEeqcDOBnFxLjAg" name="testaCarrinhoSemProduto" specification="_eeowAvIUEeqcDOBnFxLjAg">
+                  <language>java</language>
+                  <body>cart.add(null, 1);&#xD;
+		assertTrue(cart.getItems().size() == 0);&#xD;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ee_VUvIUEeqcDOBnFxLjAg" name="testaRemoverProdutoCarrinhoVazio" specification="_eeqlMPIUEeqcDOBnFxLjAg">
+                  <language>java</language>
+                  <body>Product p = new Product();&#xD;
+		p.setName(&quot;Hot Wheels&quot;);&#xD;
+		&#xD;
+		cart.remove(p);&#xD;
+		&#xD;
+		assertTrue(cart.getItems().size() == 0);&#xD;
+		&#xD;
+	</body>
+                </ownedBehavior>
+                <ownedOperation xmi:id="_eedw4PIUEeqcDOBnFxLjAg" name="initialize" method="_ee-HMPIUEeqcDOBnFxLjAg"/>
+                <ownedOperation xmi:id="_eefmEPIUEeqcDOBnFxLjAg" name="finalize" method="_ee-HMfIUEeqcDOBnFxLjAg"/>
+                <ownedOperation xmi:id="_eeg0MvIUEeqcDOBnFxLjAg" name="testaValorCarrinhoVazio" method="_ee-HMvIUEeqcDOBnFxLjAg"/>
+                <ownedOperation xmi:id="_eeiCUvIUEeqcDOBnFxLjAg" name="testaProdutoInseridoComSucesso" method="_ee-uQPIUEeqcDOBnFxLjAg"/>
+                <ownedOperation xmi:id="_eejQcvIUEeqcDOBnFxLjAg" name="testaProdutoAtualizado" method="_ee-uQfIUEeqcDOBnFxLjAg"/>
+                <ownedOperation xmi:id="_eekekvIUEeqcDOBnFxLjAg" name="testaProdutoRemovido" method="_ee-uQvIUEeqcDOBnFxLjAg"/>
+                <ownedOperation xmi:id="_eelssvIUEeqcDOBnFxLjAg" name="testaValorTotalDaCompra" method="_ee-uQ_IUEeqcDOBnFxLjAg"/>
+                <ownedOperation xmi:id="_eem60vIUEeqcDOBnFxLjAg" name="testaCarrinhoComQuantitativoNegativo" method="_ee_VUPIUEeqcDOBnFxLjAg"/>
+                <ownedOperation xmi:id="_eeowAvIUEeqcDOBnFxLjAg" name="testaCarrinhoSemProduto" method="_ee_VUfIUEeqcDOBnFxLjAg"/>
+                <ownedOperation xmi:id="_eeqlMPIUEeqcDOBnFxLjAg" name="testaRemoverProdutoCarrinhoVazio" method="_ee_VUvIUEeqcDOBnFxLjAg"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_efCYoPIUEeqcDOBnFxLjAg" name="" memberEnd="_efCYofIUEeqcDOBnFxLjAg _ee5OsPIUEeqcDOBnFxLjAg">
+                <ownedEnd xmi:id="_efCYofIUEeqcDOBnFxLjAg" name="" type="_eeciwPIUEeqcDOBnFxLjAg" association="_efCYoPIUEeqcDOBnFxLjAg"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_efEN0fIUEeqcDOBnFxLjAg" name="" memberEnd="_efEN0vIUEeqcDOBnFxLjAg _ee7q8fIUEeqcDOBnFxLjAg">
+                <ownedEnd xmi:id="_efEN0vIUEeqcDOBnFxLjAg" name="" type="_eeciwPIUEeqcDOBnFxLjAg" association="_efEN0fIUEeqcDOBnFxLjAg"/>
+              </packagedElement>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Package" xmi:id="_pBP88PGBEeq0et1cZ_IYHA" name="service">
+              <packagedElement xmi:type="uml:Class" xmi:id="_pF5MYPGBEeq0et1cZ_IYHA" name="CartService">
+                <ownedAttribute xmi:id="_pTVygPGBEeq0et1cZ_IYHA" name="cart" type="_pHqG8PGBEeq0et1cZ_IYHA" isReadOnly="true" association="_pU7t8fGBEeq0et1cZ_IYHA"/>
+                <ownedAttribute xmi:id="_pTXAoPGBEeq0et1cZ_IYHA" name="customer" type="_pEXiYPGBEeq0et1cZ_IYHA" isReadOnly="true" association="_pU9jIPGBEeq0et1cZ_IYHA"/>
+                <ownedAttribute xmi:id="_pTXnsPGBEeq0et1cZ_IYHA" name="paymentMethod" type="_pFlDUPGBEeq0et1cZ_IYHA" isReadOnly="true"/>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_pUQ_kPGBEeq0et1cZ_IYHA" name="CartService" specification="_pRn7QPGBEeq0et1cZ_IYHA">
+                  <ownedParameter xmi:id="_pUQ_kfGBEeq0et1cZ_IYHA" name="cart" type="_pHqG8PGBEeq0et1cZ_IYHA"/>
+                  <ownedParameter xmi:id="_pUQ_kvGBEeq0et1cZ_IYHA" name="customer" type="_pEXiYPGBEeq0et1cZ_IYHA"/>
+                  <ownedParameter xmi:id="_pUQ_k_GBEeq0et1cZ_IYHA" name="paymentMethod" type="_pFlDUPGBEeq0et1cZ_IYHA"/>
+                  <ownedParameter xmi:id="_pUQ_lPGBEeq0et1cZ_IYHA" type="_pF5MYPGBEeq0et1cZ_IYHA" direction="return"/>
+                  <language>java</language>
+                  <body>super();&#xD;
+		this.cart = cart;&#xD;
+		this.customer = customer;&#xD;
+		this.paymentMethod = paymentMethod;&#xD;
+		&#xD;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_pURmoPGBEeq0et1cZ_IYHA" name="checkout" specification="_pF_TAPGBEeq0et1cZ_IYHA">
+                  <ownedParameter xmi:id="_pURmofGBEeq0et1cZ_IYHA" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>if(paymentMethod != null  &amp;&amp; cart.getItems().size() > 0 &amp;&amp; customer.getAddresses().size() > 0) {&#xD;
+			return true;&#xD;
+		}&#xD;
+	&#xD;
+		return false;&#xD;
+	</body>
+                </ownedBehavior>
+                <ownedOperation xmi:id="_pF_TAPGBEeq0et1cZ_IYHA" name="checkout" method="_pURmoPGBEeq0et1cZ_IYHA">
+                  <ownedParameter xmi:id="_pF_6EPGBEeq0et1cZ_IYHA" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_pRn7QPGBEeq0et1cZ_IYHA" name="CartService" method="_pUQ_kPGBEeq0et1cZ_IYHA">
+                  <eAnnotations xmi:id="_pRpJYPGBEeq0et1cZ_IYHA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                    <details xmi:id="_pRpJYfGBEeq0et1cZ_IYHA" key="create"/>
+                  </eAnnotations>
+                  <ownedParameter xmi:id="_pRn7QfGBEeq0et1cZ_IYHA" name="cart" type="_pHqG8PGBEeq0et1cZ_IYHA"/>
+                  <ownedParameter xmi:id="_pRoiUPGBEeq0et1cZ_IYHA" name="customer" type="_pEXiYPGBEeq0et1cZ_IYHA"/>
+                  <ownedParameter xmi:id="_pRoiUfGBEeq0et1cZ_IYHA" name="paymentMethod" type="_pFlDUPGBEeq0et1cZ_IYHA"/>
+                  <ownedParameter xmi:id="_pRpwcPGBEeq0et1cZ_IYHA" type="_pF5MYPGBEeq0et1cZ_IYHA" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_pGJrEPGBEeq0et1cZ_IYHA" name="PaymentService">
+                <ownedAttribute xmi:id="_pTY10PGBEeq0et1cZ_IYHA" name="creditOperator" visibility="private" type="_pD9SsPGBEeq0et1cZ_IYHA" association="_pU-xQfGBEeq0et1cZ_IYHA"/>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_pUSNsPGBEeq0et1cZ_IYHA" name="PaymentService" specification="_pRuB4PGBEeq0et1cZ_IYHA">
+                  <ownedParameter xmi:id="_pUSNsfGBEeq0et1cZ_IYHA" name="bank" type="_pD9SsPGBEeq0et1cZ_IYHA"/>
+                  <ownedParameter xmi:id="_pUSNsvGBEeq0et1cZ_IYHA" type="_pGJrEPGBEeq0et1cZ_IYHA" direction="return"/>
+                  <language>java</language>
+                  <body>this.creditOperator = bank;&#xD;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_pUS0wPGBEeq0et1cZ_IYHA" name="pay" specification="_pSy_8PGBEeq0et1cZ_IYHA">
+                  <ownedParameter xmi:id="_pUS0wfGBEeq0et1cZ_IYHA" name="customer" type="_pEXiYPGBEeq0et1cZ_IYHA"/>
+                  <ownedParameter xmi:id="_pUS0wvGBEeq0et1cZ_IYHA" name="totalValue" type="_pQ9z8PGBEeq0et1cZ_IYHA"/>
+                  <language>java</language>
+                  <body>if(hasCredit(customer,totalValue)) {&#xD;
+			creditOperator.withdraw(totalValue);&#xD;
+		}&#xD;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_pUTb0PGBEeq0et1cZ_IYHA" name="hasCredit" specification="_pS0OEPGBEeq0et1cZ_IYHA">
+                  <ownedParameter xmi:id="_pUTb0fGBEeq0et1cZ_IYHA" name="customer" type="_pEXiYPGBEeq0et1cZ_IYHA"/>
+                  <ownedParameter xmi:id="_pUTb0vGBEeq0et1cZ_IYHA" name="total" type="_pQ9z8PGBEeq0et1cZ_IYHA"/>
+                  <ownedParameter xmi:id="_pUTb0_GBEeq0et1cZ_IYHA" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>BigDecimal creditInWallet = BigDecimal.ZERO;&#xD;
+		if(creditOperator.getWallet().containsKey(customer.getId())) {		&#xD;
+		creditInWallet = creditOperator.getWallet().get(customer.getId());&#xD;
+		}&#xD;
+		return (creditInWallet.compareTo(total) == 1 ? true : false);&#xD;
+	</body>
+                </ownedBehavior>
+                <ownedOperation xmi:id="_pGOjkPGBEeq0et1cZ_IYHA" name="PaymentService">
+                  <eAnnotations xmi:id="_pGPKoPGBEeq0et1cZ_IYHA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                    <details xmi:id="_pGPKofGBEeq0et1cZ_IYHA" key="create"/>
+                  </eAnnotations>
+                  <ownedParameter xmi:id="_pGRm4PGBEeq0et1cZ_IYHA" type="_pGJrEPGBEeq0et1cZ_IYHA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_pRuB4PGBEeq0et1cZ_IYHA" name="PaymentService" method="_pUSNsPGBEeq0et1cZ_IYHA">
+                  <eAnnotations xmi:id="_pRuo8PGBEeq0et1cZ_IYHA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                    <details xmi:id="_pRuo8fGBEeq0et1cZ_IYHA" key="create"/>
+                  </eAnnotations>
+                  <ownedParameter xmi:id="_pRuB4fGBEeq0et1cZ_IYHA" name="bank" type="_pD9SsPGBEeq0et1cZ_IYHA"/>
+                  <ownedParameter xmi:id="_pRvQAPGBEeq0et1cZ_IYHA" type="_pGJrEPGBEeq0et1cZ_IYHA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_pSy_8PGBEeq0et1cZ_IYHA" name="pay" method="_pUS0wPGBEeq0et1cZ_IYHA">
+                  <ownedParameter xmi:id="_pSy_8fGBEeq0et1cZ_IYHA" name="customer" type="_pEXiYPGBEeq0et1cZ_IYHA"/>
+                  <ownedParameter xmi:id="_pSznAPGBEeq0et1cZ_IYHA" name="totalValue" type="_pQ9z8PGBEeq0et1cZ_IYHA"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_pS0OEPGBEeq0et1cZ_IYHA" name="hasCredit" method="_pUTb0PGBEeq0et1cZ_IYHA">
+                  <ownedParameter xmi:id="_pS01IPGBEeq0et1cZ_IYHA" name="customer" type="_pEXiYPGBEeq0et1cZ_IYHA"/>
+                  <ownedParameter xmi:id="_pS01IfGBEeq0et1cZ_IYHA" name="total" type="_pQ9z8PGBEeq0et1cZ_IYHA"/>
+                  <ownedParameter xmi:id="_pS01IvGBEeq0et1cZ_IYHA" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                  </ownedParameter>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_pHBNwPGBEeq0et1cZ_IYHA" name="CartServiceTest">
+                <eAnnotations xmi:id="_pHB00PGBEeq0et1cZ_IYHA" source="http://ns.yatta.de/umllab">
+                  <contents xmi:type="ecore:EAnnotation" xmi:id="_pHB00fGBEeq0et1cZ_IYHA" source="codegen">
+                    <details xmi:id="_pHB00vGBEeq0et1cZ_IYHA" key="codegenDirectory" value="/ShoppingCart/test"/>
+                  </contents>
+                </eAnnotations>
+                <ownedAttribute xmi:id="_pTduUPGBEeq0et1cZ_IYHA" name="cartService" visibility="package" type="_pF5MYPGBEeq0et1cZ_IYHA" association="_pVDpwfGBEeq0et1cZ_IYHA"/>
+                <ownedAttribute xmi:id="_pTfjgPGBEeq0et1cZ_IYHA" name="cart" visibility="package" type="_pHqG8PGBEeq0et1cZ_IYHA" association="_pVFe8PGBEeq0et1cZ_IYHA"/>
+                <ownedAttribute xmi:id="_pTgxoPGBEeq0et1cZ_IYHA" name="customer" visibility="package" type="_pEXiYPGBEeq0et1cZ_IYHA" association="_pVGtEfGBEeq0et1cZ_IYHA"/>
+                <ownedAttribute xmi:id="_pTh_wPGBEeq0et1cZ_IYHA" name="product" visibility="package" type="_pFnfkPGBEeq0et1cZ_IYHA" association="_pVIiQPGBEeq0et1cZ_IYHA"/>
+                <ownedAttribute xmi:id="_pTjN4PGBEeq0et1cZ_IYHA" name="addresses" visibility="package" type="_pDYq8PGBEeq0et1cZ_IYHA" association="_pVJwYfGBEeq0et1cZ_IYHA">
+                  <qualifier xmi:id="_pTnfUPGBEeq0et1cZ_IYHA" type="_pTlqIPGBEeq0et1cZ_IYHA"/>
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_pTj08PGBEeq0et1cZ_IYHA" value="new HashMap&lt;AddressType, Address>()"/>
+                </ownedAttribute>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_pUWfIPGBEeq0et1cZ_IYHA" name="initialize" specification="_pHE4IPGBEeq0et1cZ_IYHA">
+                  <language>java</language>
+                  <body>cart = new ShoppingCart();&#xD;
+		&#xD;
+		customer = new Customer();&#xD;
+		customer.setName(&quot;Pedro&quot;);&#xD;
+		customer.setAddresses(addresses);&#xD;
+		&#xD;
+		product = new Product();&#xD;
+		product.setName(&quot;LEGO&quot;);&#xD;
+		&#xD;
+		addresses.put(AddressType.HOME,new Address(&quot;Rua um&quot;, &quot;200&quot;, &quot;444&quot;));&#xD;
+		&#xD;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_pUXGMPGBEeq0et1cZ_IYHA" name="testaFechamentoDaCompra" specification="_pHIigPGBEeq0et1cZ_IYHA">
+                  <language>java</language>
+                  <body>cart.add(product, 2);		&#xD;
+		CartService cs = new CartService(cart,customer,PaymentMethod.CREDITCARD);	&#xD;
+		assertTrue(cs.checkout());&#xD;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_pUXGMfGBEeq0et1cZ_IYHA" name="testaResumodaCompraPosFechamento" specification="_pHK-wfGBEeq0et1cZ_IYHA">
+                  <language>java</language>
+                  <body>customer.setName(&quot;Pedro&quot;);&#xD;
+			&#xD;
+		customer.setAddresses(addresses);&#xD;
+		&#xD;
+		cart.add(product, 2);&#xD;
+		CartService cs = new CartService(cart,customer,PaymentMethod.DEBITCARD);	&#xD;
+		assertTrue(cs.checkout());&#xD;
+		assertEquals(&quot;Pedro&quot;, cs.getCustomer().getName());&#xD;
+		assertTrue(cs.getCart().getItems().size() > 0 );&#xD;
+		assertEquals(&quot;LEGO&quot;, cs.getCart().getItems().get(0).getProduct().getName());&#xD;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_pUXtQPGBEeq0et1cZ_IYHA" name="testaCarrinhoSemproduto" specification="_pHNbAPGBEeq0et1cZ_IYHA">
+                  <language>java</language>
+                  <body>ShoppingCart cart = new ShoppingCart();		&#xD;
+		CartService cs = new CartService(cart, customer, PaymentMethod.IFPAY);&#xD;
+		assertFalse(cs.checkout());&#xD;
+	</body>
+                </ownedBehavior>
+                <ownedOperation xmi:id="_pHE4IPGBEeq0et1cZ_IYHA" name="initialize" method="_pUWfIPGBEeq0et1cZ_IYHA"/>
+                <ownedOperation xmi:id="_pHIigPGBEeq0et1cZ_IYHA" name="testaFechamentoDaCompra" method="_pUXGMPGBEeq0et1cZ_IYHA"/>
+                <ownedOperation xmi:id="_pHK-wfGBEeq0et1cZ_IYHA" name="testaResumodaCompraPosFechamento" method="_pUXGMfGBEeq0et1cZ_IYHA"/>
+                <ownedOperation xmi:id="_pHNbAPGBEeq0et1cZ_IYHA" name="testaCarrinhoSemproduto" method="_pUXtQPGBEeq0et1cZ_IYHA"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_pHYaIPGBEeq0et1cZ_IYHA" name="PaymentServiceTest">
+                <eAnnotations xmi:id="_pHZoQPGBEeq0et1cZ_IYHA" source="http://ns.yatta.de/umllab">
+                  <contents xmi:type="ecore:EAnnotation" xmi:id="_pHaPUPGBEeq0et1cZ_IYHA" source="codegen">
+                    <details xmi:id="_pHaPUfGBEeq0et1cZ_IYHA" key="codegenDirectory" value="/ShoppingCart/test"/>
+                  </contents>
+                </eAnnotations>
+                <ownedAttribute xmi:id="_pTotcPGBEeq0et1cZ_IYHA" name="paymentService" visibility="package" type="_pGJrEPGBEeq0et1cZ_IYHA" association="_pVLlkPGBEeq0et1cZ_IYHA"/>
+                <ownedAttribute xmi:id="_pTp7kfGBEeq0et1cZ_IYHA" name="creditOperator" visibility="package" type="_pD9SsPGBEeq0et1cZ_IYHA" association="_pVNawPGBEeq0et1cZ_IYHA"/>
+                <ownedAttribute xmi:id="_pTrJsfGBEeq0et1cZ_IYHA" name="customer" visibility="package" type="_pEXiYPGBEeq0et1cZ_IYHA" association="_pVOB0fGBEeq0et1cZ_IYHA"/>
+                <ownedAttribute xmi:id="_pTs-4PGBEeq0et1cZ_IYHA" name="addresses" visibility="package" type="_pDYq8PGBEeq0et1cZ_IYHA" association="_pVP3APGBEeq0et1cZ_IYHA">
+                  <qualifier xmi:id="_pTuNAPGBEeq0et1cZ_IYHA" type="_pTlqIPGBEeq0et1cZ_IYHA"/>
+                </ownedAttribute>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_pUYUUPGBEeq0et1cZ_IYHA" name="initialize" specification="_pHcEgPGBEeq0et1cZ_IYHA">
+                  <language>java</language>
+                  <body>customer = new Customer();&#xD;
+		customer.setId(1);&#xD;
+		customer.setName(&quot;Pedro&quot;);&#xD;
+		creditOperator = new Bank(customer, new BigDecimal(&quot;5000.00&quot;));&#xD;
+		creditOperator.setPaymentMethod(PaymentMethod.IFPAY);&#xD;
+		addresses = (Map&lt;AddressType, Address>) new &#xD;
+				HashMap&lt;AddressType, Address>();&#xD;
+				addresses.put(AddressType.HOME, &#xD;
+				new Address(&quot;Rua um&quot;, &quot;200&quot;, &quot;444&quot;));&#xD;
+				&#xD;
+				paymentService = new PaymentService(creditOperator);&#xD;
+		&#xD;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_pUYUUfGBEeq0et1cZ_IYHA" name="testaClienteTemCredito" specification="_pHfH0PGBEeq0et1cZ_IYHA">
+                  <language>java</language>
+                  <body>assertTrue(paymentService.hasCredit(customer,new BigDecimal(&quot;2300.00&quot;)));			   	&#xD;
+		&#xD;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_pUY7YPGBEeq0et1cZ_IYHA" name="testaBaixaCreditoCliente" specification="_pHg9AvGBEeq0et1cZ_IYHA">
+                  <language>java</language>
+                  <body>customer = new Customer();&#xD;
+		customer.setId(1);&#xD;
+		customer.setName(&quot;Pedro&quot;);&#xD;
+		&#xD;
+		Bank operator = new Bank(customer, new BigDecimal(&quot;5000.00&quot;));&#xD;
+		operator.setPaymentMethod(PaymentMethod.CREDITCARD);&#xD;
+		PaymentService service = new PaymentService(operator);&#xD;
+		&#xD;
+				&#xD;
+		&#xD;
+		service.pay(customer, new BigDecimal(&quot;1000.00&quot;));&#xD;
+		&#xD;
+		assertEquals(new BigDecimal(&quot;4000.00&quot;), operator.getCustomerCredit(customer));&#xD;
+		&#xD;
+		&#xD;
+		&#xD;
+		&#xD;
+		&#xD;
+		&#xD;
+		&#xD;
+		&#xD;
+		&#xD;
+	</body>
+                </ownedBehavior>
+                <ownedOperation xmi:id="_pHcEgPGBEeq0et1cZ_IYHA" name="initialize" method="_pUYUUPGBEeq0et1cZ_IYHA"/>
+                <ownedOperation xmi:id="_pHfH0PGBEeq0et1cZ_IYHA" name="testaClienteTemCredito" method="_pUYUUfGBEeq0et1cZ_IYHA"/>
+                <ownedOperation xmi:id="_pHg9AvGBEeq0et1cZ_IYHA" name="testaBaixaCreditoCliente" method="_pUY7YPGBEeq0et1cZ_IYHA"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_pTlqIPGBEeq0et1cZ_IYHA" name="AddressType"/>
+              <packagedElement xmi:type="uml:Association" xmi:id="_pU7t8fGBEeq0et1cZ_IYHA" name="" memberEnd="_pU7t8vGBEeq0et1cZ_IYHA _pTVygPGBEeq0et1cZ_IYHA">
+                <ownedEnd xmi:id="_pU7t8vGBEeq0et1cZ_IYHA" name="" type="_pF5MYPGBEeq0et1cZ_IYHA" association="_pU7t8fGBEeq0et1cZ_IYHA"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_pU9jIPGBEeq0et1cZ_IYHA" name="" memberEnd="_pU9jIfGBEeq0et1cZ_IYHA _pTXAoPGBEeq0et1cZ_IYHA">
+                <ownedEnd xmi:id="_pU9jIfGBEeq0et1cZ_IYHA" name="" type="_pF5MYPGBEeq0et1cZ_IYHA" association="_pU9jIPGBEeq0et1cZ_IYHA"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_pU-xQfGBEeq0et1cZ_IYHA" name="" memberEnd="_pU-xQvGBEeq0et1cZ_IYHA _pTY10PGBEeq0et1cZ_IYHA">
+                <ownedEnd xmi:id="_pU-xQvGBEeq0et1cZ_IYHA" name="" type="_pGJrEPGBEeq0et1cZ_IYHA" association="_pU-xQfGBEeq0et1cZ_IYHA"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_pVDpwfGBEeq0et1cZ_IYHA" name="" memberEnd="_pVDpwvGBEeq0et1cZ_IYHA _pTduUPGBEeq0et1cZ_IYHA">
+                <ownedEnd xmi:id="_pVDpwvGBEeq0et1cZ_IYHA" name="" type="_pHBNwPGBEeq0et1cZ_IYHA" association="_pVDpwfGBEeq0et1cZ_IYHA"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_pVFe8PGBEeq0et1cZ_IYHA" name="" memberEnd="_pVFe8fGBEeq0et1cZ_IYHA _pTfjgPGBEeq0et1cZ_IYHA">
+                <ownedEnd xmi:id="_pVFe8fGBEeq0et1cZ_IYHA" name="" type="_pHBNwPGBEeq0et1cZ_IYHA" association="_pVFe8PGBEeq0et1cZ_IYHA"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_pVGtEfGBEeq0et1cZ_IYHA" name="" memberEnd="_pVGtEvGBEeq0et1cZ_IYHA _pTgxoPGBEeq0et1cZ_IYHA">
+                <ownedEnd xmi:id="_pVGtEvGBEeq0et1cZ_IYHA" name="" type="_pHBNwPGBEeq0et1cZ_IYHA" association="_pVGtEfGBEeq0et1cZ_IYHA"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_pVIiQPGBEeq0et1cZ_IYHA" name="" memberEnd="_pVIiQfGBEeq0et1cZ_IYHA _pTh_wPGBEeq0et1cZ_IYHA">
+                <ownedEnd xmi:id="_pVIiQfGBEeq0et1cZ_IYHA" name="" type="_pHBNwPGBEeq0et1cZ_IYHA" association="_pVIiQPGBEeq0et1cZ_IYHA"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_pVJwYfGBEeq0et1cZ_IYHA" name="" memberEnd="_pVJwYvGBEeq0et1cZ_IYHA _pTjN4PGBEeq0et1cZ_IYHA">
+                <ownedEnd xmi:id="_pVJwYvGBEeq0et1cZ_IYHA" name="" type="_pHBNwPGBEeq0et1cZ_IYHA" association="_pVJwYfGBEeq0et1cZ_IYHA"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_pVLlkPGBEeq0et1cZ_IYHA" name="" memberEnd="_pVLlkfGBEeq0et1cZ_IYHA _pTotcPGBEeq0et1cZ_IYHA">
+                <ownedEnd xmi:id="_pVLlkfGBEeq0et1cZ_IYHA" name="" type="_pHYaIPGBEeq0et1cZ_IYHA" association="_pVLlkPGBEeq0et1cZ_IYHA"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_pVNawPGBEeq0et1cZ_IYHA" name="" memberEnd="_pVNawfGBEeq0et1cZ_IYHA _pTp7kfGBEeq0et1cZ_IYHA">
+                <ownedEnd xmi:id="_pVNawfGBEeq0et1cZ_IYHA" name="" type="_pHYaIPGBEeq0et1cZ_IYHA" association="_pVNawPGBEeq0et1cZ_IYHA"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_pVOB0fGBEeq0et1cZ_IYHA" name="" memberEnd="_pVOB0vGBEeq0et1cZ_IYHA _pTrJsfGBEeq0et1cZ_IYHA">
+                <ownedEnd xmi:id="_pVOB0vGBEeq0et1cZ_IYHA" name="" type="_pHYaIPGBEeq0et1cZ_IYHA" association="_pVOB0fGBEeq0et1cZ_IYHA"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_pVP3APGBEeq0et1cZ_IYHA" name="" memberEnd="_pVP3AfGBEeq0et1cZ_IYHA _pTs-4PGBEeq0et1cZ_IYHA">
+                <ownedEnd xmi:id="_pVP3AfGBEeq0et1cZ_IYHA" name="" type="_pHYaIPGBEeq0et1cZ_IYHA" association="_pVP3APGBEeq0et1cZ_IYHA"/>
+              </packagedElement>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Package" xmi:id="_iQxk4PIUEeqcDOBnFxLjAg" name="suite">
+              <packagedElement xmi:type="uml:Class" xmi:id="_iQ0BIPIUEeqcDOBnFxLjAg" name="ShoppingCartSTestSuite">
+                <eAnnotations xmi:id="_iQ0oMPIUEeqcDOBnFxLjAg" source="http://ns.yatta.de/umllab">
+                  <contents xmi:type="ecore:EAnnotation" xmi:id="_iQ0oMfIUEeqcDOBnFxLjAg" source="codegen">
+                    <details xmi:id="_iQ0oMvIUEeqcDOBnFxLjAg" key="codegenDirectory" value="/ShoppingCart/test"/>
+                  </contents>
+                </eAnnotations>
+              </packagedElement>
+            </packagedElement>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_o_oMUPGBEeq0et1cZ_IYHA" name="lombok">
+      <packagedElement xmi:type="uml:Interface" xmi:id="_pQ2fMPGBEeq0et1cZ_IYHA" name="Data"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_pRNEgPGBEeq0et1cZ_IYHA" name="AllArgsConstructor"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_pRQu4PGBEeq0et1cZ_IYHA" name="EqualsAndHashCode"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_pRTLIfGBEeq0et1cZ_IYHA" name="NoArgsConstructor"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_pAJwwPGBEeq0et1cZ_IYHA" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_pAKX0PGBEeq0et1cZ_IYHA" name="math">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_pQ9z8PGBEeq0et1cZ_IYHA" name="BigDecimal"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_pALl8PGBEeq0et1cZ_IYHA" name="util">
+        <packagedElement xmi:type="uml:Class" xmi:id="_pRA3QPGBEeq0et1cZ_IYHA" name="HashMap"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_pRDTgfGBEeq0et1cZ_IYHA" name="Map"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_pSIRkPGBEeq0et1cZ_IYHA" name="ArrayList"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_pSKt0PGBEeq0et1cZ_IYHA" name="Iterator"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_pSMjAPGBEeq0et1cZ_IYHA" name="List"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_pSrEIPGBEeq0et1cZ_IYHA" name="lang">
+        <packagedElement xmi:type="uml:Class" xmi:id="_pSrEIfGBEeq0et1cZ_IYHA" name="Object"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_pBHaEPGBEeq0et1cZ_IYHA" name="org">
+      <packagedElement xmi:type="uml:Package" xmi:id="_pBHaEfGBEeq0et1cZ_IYHA" name="junit">
+        <packagedElement xmi:type="uml:Package" xmi:id="_pBIBIPGBEeq0et1cZ_IYHA" name="runner">
+          <packagedElement xmi:type="uml:Interface" xmi:id="_pRexUPGBEeq0et1cZ_IYHA" name="RunWith"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_pBIoMPGBEeq0et1cZ_IYHA" name="runners">
+          <packagedElement xmi:type="uml:Package" xmi:id="_pBJPQPGBEeq0et1cZ_IYHA" name="Suite">
+            <packagedElement xmi:type="uml:Interface" xmi:id="_pRjp0PGBEeq0et1cZ_IYHA" name="SuiteClasses"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_pRh0oPGBEeq0et1cZ_IYHA" name="Suite"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_pBplkPGBEeq0et1cZ_IYHA" name="jupiter">
+          <packagedElement xmi:type="uml:Package" xmi:id="_pBqMoPGBEeq0et1cZ_IYHA" name="api">
+            <packagedElement xmi:type="uml:Class" xmi:id="_pR3L0PGBEeq0et1cZ_IYHA" name="Assertions"/>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_pR0vkPGBEeq0et1cZ_IYHA" name="Assert"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_pR5oEfGBEeq0et1cZ_IYHA" name="Before"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_pR7dQfGBEeq0et1cZ_IYHA" name="Test"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_pSVs8PGBEeq0et1cZ_IYHA" name="After"/>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_oLEi4PGBEeq0et1cZ_IYHA">
+      <eAnnotations xmi:id="_oLLQkPGBEeq0et1cZ_IYHA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLLabProfile:TargetLanguage xmi:id="_oLYr8PGBEeq0et1cZ_IYHA" base_Package="_oAzzoPGBEeq0et1cZ_IYHA">
+    <languageName>java</languageName>
+  </UMLLabProfile:TargetLanguage>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_pDgmwPGBEeq0et1cZ_IYHA" base_Element="_pDYq8PGBEeq0et1cZ_IYHA"/>
+  <UMLLabProfile:StyledElement xmi:id="_pDv3UPGBEeq0et1cZ_IYHA" base_Element="_pDqXwPGBEeq0et1cZ_IYHA"/>
+  <UMLLabProfile:Annotations xmi:id="_pDy6oPGBEeq0et1cZ_IYHA" base_Element="_pDYq8PGBEeq0et1cZ_IYHA">
+    <annotations xmi:id="_pDzhsPGBEeq0et1cZ_IYHA" name="Data"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_pD_H4PGBEeq0et1cZ_IYHA" base_Element="_pD9SsPGBEeq0et1cZ_IYHA"/>
+  <UMLLabProfile:Annotations xmi:id="_pEFOgPGBEeq0et1cZ_IYHA" base_Element="_pD9SsPGBEeq0et1cZ_IYHA">
+    <annotations xmi:id="_pEF1kPGBEeq0et1cZ_IYHA" name="Data"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_pEalsPGBEeq0et1cZ_IYHA" base_Element="_pEXiYPGBEeq0et1cZ_IYHA"/>
+  <UMLLabProfile:Annotations xmi:id="_pEhTYPGBEeq0et1cZ_IYHA" base_Element="_pEeQEPGBEeq0et1cZ_IYHA">
+    <annotations xmi:id="_pEhTYfGBEeq0et1cZ_IYHA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Annotations xmi:id="_pEjIkPGBEeq0et1cZ_IYHA" base_Element="_pEXiYPGBEeq0et1cZ_IYHA">
+    <annotations xmi:id="_pEjvoPGBEeq0et1cZ_IYHA" name="NoArgsConstructor"/>
+    <annotations xmi:id="_pEjvofGBEeq0et1cZ_IYHA" name="AllArgsConstructor"/>
+    <annotations xmi:id="_pEkWsPGBEeq0et1cZ_IYHA" name="Data"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_pFfjwPGBEeq0et1cZ_IYHA" base_Element="_pFcgcPGBEeq0et1cZ_IYHA"/>
+  <UMLLabProfile:Annotations xmi:id="_pFhY8PGBEeq0et1cZ_IYHA" base_Element="_pFcgcPGBEeq0et1cZ_IYHA">
+    <annotations xmi:id="_pFhY8fGBEeq0et1cZ_IYHA" name="AllArgsConstructor"/>
+    <annotations xmi:id="_pFhY8vGBEeq0et1cZ_IYHA" name="Data"/>
+    <annotations xmi:id="_pFiAAPGBEeq0et1cZ_IYHA" name="EqualsAndHashCode"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_pFrxAPGBEeq0et1cZ_IYHA" base_Element="_pFnfkPGBEeq0et1cZ_IYHA"/>
+  <UMLLabProfile:Annotations xmi:id="_pFu0UPGBEeq0et1cZ_IYHA" base_Element="_pFnfkPGBEeq0et1cZ_IYHA">
+    <annotations xmi:id="_pFu0UfGBEeq0et1cZ_IYHA" name="Data"/>
+    <annotations xmi:id="_pFu0UvGBEeq0et1cZ_IYHA" name="EqualsAndHashCode"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_pGQYwPGBEeq0et1cZ_IYHA" base_Element="_pGOjkPGBEeq0et1cZ_IYHA"/>
+  <UMLLabProfile:Annotations xmi:id="_pGS1APGBEeq0et1cZ_IYHA" base_Element="_pGOjkPGBEeq0et1cZ_IYHA">
+    <annotations xmi:id="_pGTcEPGBEeq0et1cZ_IYHA" name="SuppressWarnings">
+      <annotationParameters xmi:id="_pGTcEfGBEeq0et1cZ_IYHA" skipName="true" skipArray="true">
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_pUkhkPGBEeq0et1cZ_IYHA" value="&quot;unchecked&quot;"/>
+      </annotationParameters>
+    </annotations>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_pHGGQPGBEeq0et1cZ_IYHA" base_Element="_pHE4IPGBEeq0et1cZ_IYHA"/>
+  <UMLLabProfile:Annotations xmi:id="_pHHUYPGBEeq0et1cZ_IYHA" base_Element="_pHE4IPGBEeq0et1cZ_IYHA">
+    <annotations xmi:id="_pHHUYfGBEeq0et1cZ_IYHA" name="Before"/>
+    <annotations xmi:id="_pHH7cPGBEeq0et1cZ_IYHA" name="SuppressWarnings">
+      <annotationParameters xmi:id="_pHH7cfGBEeq0et1cZ_IYHA" skipName="true" skipArray="true">
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_pUlIoPGBEeq0et1cZ_IYHA" value="&quot;unchecked&quot;"/>
+      </annotationParameters>
+    </annotations>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_pHJwoPGBEeq0et1cZ_IYHA" base_Element="_pHIigPGBEeq0et1cZ_IYHA"/>
+  <UMLLabProfile:Annotations xmi:id="_pHKXsPGBEeq0et1cZ_IYHA" base_Element="_pHIigPGBEeq0et1cZ_IYHA">
+    <annotations xmi:id="_pHK-wPGBEeq0et1cZ_IYHA" name="Test"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_pHMM4PGBEeq0et1cZ_IYHA" base_Element="_pHK-wfGBEeq0et1cZ_IYHA"/>
+  <UMLLabProfile:Annotations xmi:id="_pHMz8PGBEeq0et1cZ_IYHA" base_Element="_pHK-wfGBEeq0et1cZ_IYHA">
+    <annotations xmi:id="_pHMz8fGBEeq0et1cZ_IYHA" name="Test"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_pHOpIPGBEeq0et1cZ_IYHA" base_Element="_pHNbAPGBEeq0et1cZ_IYHA"/>
+  <UMLLabProfile:Annotations xmi:id="_pHP3QPGBEeq0et1cZ_IYHA" base_Element="_pHNbAPGBEeq0et1cZ_IYHA">
+    <annotations xmi:id="_pHP3QfGBEeq0et1cZ_IYHA" name="Test"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_pHdSoPGBEeq0et1cZ_IYHA" base_Element="_pHcEgPGBEeq0et1cZ_IYHA"/>
+  <UMLLabProfile:Annotations xmi:id="_pHegwPGBEeq0et1cZ_IYHA" base_Element="_pHcEgPGBEeq0et1cZ_IYHA">
+    <annotations xmi:id="_pHegwfGBEeq0et1cZ_IYHA" name="Before"/>
+    <annotations xmi:id="_pHegwvGBEeq0et1cZ_IYHA" name="SuppressWarnings">
+      <annotationParameters xmi:id="_pHegw_GBEeq0et1cZ_IYHA" skipName="true" skipArray="true">
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_pUlvsPGBEeq0et1cZ_IYHA" value="&quot;unchecked&quot;"/>
+      </annotationParameters>
+    </annotations>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_pHgV8PGBEeq0et1cZ_IYHA" base_Element="_pHfH0PGBEeq0et1cZ_IYHA"/>
+  <UMLLabProfile:Annotations xmi:id="_pHg9APGBEeq0et1cZ_IYHA" base_Element="_pHfH0PGBEeq0et1cZ_IYHA">
+    <annotations xmi:id="_pHg9AfGBEeq0et1cZ_IYHA" name="Test"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_pHiLIPGBEeq0et1cZ_IYHA" base_Element="_pHg9AvGBEeq0et1cZ_IYHA"/>
+  <UMLLabProfile:Annotations xmi:id="_pHjZQPGBEeq0et1cZ_IYHA" base_Element="_pHg9AvGBEeq0et1cZ_IYHA">
+    <annotations xmi:id="_pHjZQfGBEeq0et1cZ_IYHA" name="Test"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Reference xmi:id="_pQ5igPGBEeq0et1cZ_IYHA" base_Element="_pQ2fMPGBEeq0et1cZ_IYHA"/>
+  <UMLLabProfile:Reference xmi:id="_pRAQMPGBEeq0et1cZ_IYHA" base_Element="_pQ9z8PGBEeq0et1cZ_IYHA"/>
+  <UMLLabProfile:Reference xmi:id="_pRDTgPGBEeq0et1cZ_IYHA" base_Element="_pRA3QPGBEeq0et1cZ_IYHA"/>
+  <UMLLabProfile:Reference xmi:id="_pRFvwPGBEeq0et1cZ_IYHA" base_Element="_pRDTgfGBEeq0et1cZ_IYHA"/>
+  <UMLLabProfile:StyledElement xmi:id="_pRIzEPGBEeq0et1cZ_IYHA" base_Element="_pRHk8PGBEeq0et1cZ_IYHA"/>
+  <UMLLabProfile:Reference xmi:id="_pRQH0PGBEeq0et1cZ_IYHA" base_Element="_pRNEgPGBEeq0et1cZ_IYHA"/>
+  <UMLLabProfile:Reference xmi:id="_pRTLIPGBEeq0et1cZ_IYHA" base_Element="_pRQu4PGBEeq0et1cZ_IYHA"/>
+  <UMLLabProfile:Reference xmi:id="_pRVAUPGBEeq0et1cZ_IYHA" base_Element="_pRTLIfGBEeq0et1cZ_IYHA"/>
+  <UMLLabProfile:Reference xmi:id="_pRhNkPGBEeq0et1cZ_IYHA" base_Element="_pRexUPGBEeq0et1cZ_IYHA"/>
+  <UMLLabProfile:Reference xmi:id="_pRjCwPGBEeq0et1cZ_IYHA" base_Element="_pRh0oPGBEeq0et1cZ_IYHA"/>
+  <UMLLabProfile:Reference xmi:id="_pRlfAPGBEeq0et1cZ_IYHA" base_Element="_pRjp0PGBEeq0et1cZ_IYHA"/>
+  <UMLLabProfile:Reference xmi:id="_pR2kwPGBEeq0et1cZ_IYHA" base_Element="_pR0vkPGBEeq0et1cZ_IYHA"/>
+  <UMLLabProfile:Reference xmi:id="_pR5oEPGBEeq0et1cZ_IYHA" base_Element="_pR3L0PGBEeq0et1cZ_IYHA"/>
+  <UMLLabProfile:Reference xmi:id="_pR7dQPGBEeq0et1cZ_IYHA" base_Element="_pR5oEfGBEeq0et1cZ_IYHA"/>
+  <UMLLabProfile:Reference xmi:id="_pR9ScPGBEeq0et1cZ_IYHA" base_Element="_pR7dQfGBEeq0et1cZ_IYHA"/>
+  <UMLLabProfile:Reference xmi:id="_pSKGwPGBEeq0et1cZ_IYHA" base_Element="_pSIRkPGBEeq0et1cZ_IYHA"/>
+  <UMLLabProfile:Reference xmi:id="_pSL78PGBEeq0et1cZ_IYHA" base_Element="_pSKt0PGBEeq0et1cZ_IYHA"/>
+  <UMLLabProfile:Reference xmi:id="_pSNxIPGBEeq0et1cZ_IYHA" base_Element="_pSMjAPGBEeq0et1cZ_IYHA"/>
+  <UMLLabProfile:Reference xmi:id="_pSXiIPGBEeq0et1cZ_IYHA" base_Element="_pSVs8PGBEeq0et1cZ_IYHA"/>
+  <UMLLabProfile:StyledElement xmi:id="_pSmysvGBEeq0et1cZ_IYHA" base_Element="_pSlkkPGBEeq0et1cZ_IYHA"/>
+  <UMLLabProfile:StyledElement xmi:id="_pSpO8PGBEeq0et1cZ_IYHA" base_Element="_pSoA0PGBEeq0et1cZ_IYHA"/>
+  <UMLLabProfile:Reference xmi:id="_pSs5UPGBEeq0et1cZ_IYHA" base_Element="_pSrEIfGBEeq0et1cZ_IYHA"/>
+  <UMLLabProfile:Annotations xmi:id="_pSuugPGBEeq0et1cZ_IYHA" base_Element="_pSs5UfGBEeq0et1cZ_IYHA">
+    <annotations xmi:id="_pSuugfGBEeq0et1cZ_IYHA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Generics xmi:id="_pTIXIPGBEeq0et1cZ_IYHA" genericsValue="Integer,BigDecimal" base_Element="_pTGh8PGBEeq0et1cZ_IYHA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_pTZc4PGBEeq0et1cZ_IYHA" base_Element="_pTY10PGBEeq0et1cZ_IYHA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_pTe8cPGBEeq0et1cZ_IYHA" base_Element="_pTduUPGBEeq0et1cZ_IYHA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_pTgKkPGBEeq0et1cZ_IYHA" base_Element="_pTfjgPGBEeq0et1cZ_IYHA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_pThYsPGBEeq0et1cZ_IYHA" base_Element="_pTgxoPGBEeq0et1cZ_IYHA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_pTim0PGBEeq0et1cZ_IYHA" base_Element="_pTh_wPGBEeq0et1cZ_IYHA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_pTkcAPGBEeq0et1cZ_IYHA" base_Element="_pTjN4PGBEeq0et1cZ_IYHA"/>
+  <UMLLabProfile:Reference xmi:id="_pTm4QPGBEeq0et1cZ_IYHA" base_Element="_pTlqIPGBEeq0et1cZ_IYHA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_pTp7kPGBEeq0et1cZ_IYHA" base_Element="_pTotcPGBEeq0et1cZ_IYHA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_pTrJsPGBEeq0et1cZ_IYHA" base_Element="_pTp7kfGBEeq0et1cZ_IYHA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_pTsX0PGBEeq0et1cZ_IYHA" base_Element="_pTrJsfGBEeq0et1cZ_IYHA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_pTtl8PGBEeq0et1cZ_IYHA" base_Element="_pTs-4PGBEeq0et1cZ_IYHA"/>
+  <UMLLabProfile:Reference xmi:id="_pU21cPGBEeq0et1cZ_IYHA" base_Element="_pU1AQPGBEeq0et1cZ_IYHA"/>
+  <UMLLabProfile:Reference xmi:id="_pU4DkPGBEeq0et1cZ_IYHA" base_Element="_pU21cfGBEeq0et1cZ_IYHA"/>
+  <UMLLabProfile:Reference xmi:id="_pU54wPGBEeq0et1cZ_IYHA" base_Element="_pU4qoPGBEeq0et1cZ_IYHA"/>
+  <UMLLabProfile:Reference xmi:id="_pU7t8PGBEeq0et1cZ_IYHA" base_Element="_pU6f0PGBEeq0et1cZ_IYHA"/>
+  <UMLLabProfile:Reference xmi:id="_pU88EPGBEeq0et1cZ_IYHA" base_Element="_pU7t8fGBEeq0et1cZ_IYHA"/>
+  <UMLLabProfile:Reference xmi:id="_pU-xQPGBEeq0et1cZ_IYHA" base_Element="_pU9jIPGBEeq0et1cZ_IYHA"/>
+  <UMLLabProfile:Reference xmi:id="_pVAmcPGBEeq0et1cZ_IYHA" base_Element="_pU-xQfGBEeq0et1cZ_IYHA"/>
+  <UMLLabProfile:Reference xmi:id="_pVE34PGBEeq0et1cZ_IYHA" base_Element="_pVDpwfGBEeq0et1cZ_IYHA"/>
+  <UMLLabProfile:Reference xmi:id="_pVGtEPGBEeq0et1cZ_IYHA" base_Element="_pVFe8PGBEeq0et1cZ_IYHA"/>
+  <UMLLabProfile:Reference xmi:id="_pVH7MPGBEeq0et1cZ_IYHA" base_Element="_pVGtEfGBEeq0et1cZ_IYHA"/>
+  <UMLLabProfile:Reference xmi:id="_pVJwYPGBEeq0et1cZ_IYHA" base_Element="_pVIiQPGBEeq0et1cZ_IYHA"/>
+  <UMLLabProfile:Reference xmi:id="_pVK-gPGBEeq0et1cZ_IYHA" base_Element="_pVJwYfGBEeq0et1cZ_IYHA"/>
+  <UMLLabProfile:Reference xmi:id="_pVMzsPGBEeq0et1cZ_IYHA" base_Element="_pVLlkPGBEeq0et1cZ_IYHA"/>
+  <UMLLabProfile:Reference xmi:id="_pVOB0PGBEeq0et1cZ_IYHA" base_Element="_pVNawPGBEeq0et1cZ_IYHA"/>
+  <UMLLabProfile:Reference xmi:id="_pVPP8PGBEeq0et1cZ_IYHA" base_Element="_pVOB0fGBEeq0et1cZ_IYHA"/>
+  <UMLLabProfile:Reference xmi:id="_pVQeEPGBEeq0et1cZ_IYHA" base_Element="_pVP3APGBEeq0et1cZ_IYHA"/>
+  <UMLLabProfile:Reference xmi:id="_pVRsMPGBEeq0et1cZ_IYHA" base_Element="_pVQeEfGBEeq0et1cZ_IYHA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_dUdb4PIUEeqcDOBnFxLjAg" base_Element="_dUcNwPIUEeqcDOBnFxLjAg"/>
+  <UMLLabProfile:Annotations xmi:id="_dUeC8PIUEeqcDOBnFxLjAg" base_Element="_dUcNwPIUEeqcDOBnFxLjAg">
+    <annotations xmi:id="_dUeC8fIUEeqcDOBnFxLjAg" name="Before"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_dUfREPIUEeqcDOBnFxLjAg" base_Element="_dUeqAPIUEeqcDOBnFxLjAg"/>
+  <UMLLabProfile:Annotations xmi:id="_dUf4IPIUEeqcDOBnFxLjAg" base_Element="_dUeqAPIUEeqcDOBnFxLjAg">
+    <annotations xmi:id="_dUgfMPIUEeqcDOBnFxLjAg" name="Test"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_dUhGQPIUEeqcDOBnFxLjAg" base_Element="_dUgfMfIUEeqcDOBnFxLjAg"/>
+  <UMLLabProfile:Annotations xmi:id="_dUhtUPIUEeqcDOBnFxLjAg" base_Element="_dUgfMfIUEeqcDOBnFxLjAg">
+    <annotations xmi:id="_dUhtUfIUEeqcDOBnFxLjAg" name="Test"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_dU0BMPIUEeqcDOBnFxLjAg" base_Element="_dUyzEPIUEeqcDOBnFxLjAg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_dU1PUPIUEeqcDOBnFxLjAg" base_Element="_dU0oQPIUEeqcDOBnFxLjAg"/>
+  <UMLLabProfile:Reference xmi:id="_dU-ZQPIUEeqcDOBnFxLjAg" base_Element="_dU8kEPIUEeqcDOBnFxLjAg"/>
+  <UMLLabProfile:Reference xmi:id="_dVAOcPIUEeqcDOBnFxLjAg" base_Element="_dU-ZQfIUEeqcDOBnFxLjAg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_eeeX8PIUEeqcDOBnFxLjAg" base_Element="_eedw4PIUEeqcDOBnFxLjAg"/>
+  <UMLLabProfile:Annotations xmi:id="_eee_APIUEeqcDOBnFxLjAg" base_Element="_eedw4PIUEeqcDOBnFxLjAg">
+    <annotations xmi:id="_eee_AfIUEeqcDOBnFxLjAg" name="Before"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_eegNIPIUEeqcDOBnFxLjAg" base_Element="_eefmEPIUEeqcDOBnFxLjAg"/>
+  <UMLLabProfile:Annotations xmi:id="_eeg0MPIUEeqcDOBnFxLjAg" base_Element="_eefmEPIUEeqcDOBnFxLjAg">
+    <annotations xmi:id="_eeg0MfIUEeqcDOBnFxLjAg" name="After"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_eehbQPIUEeqcDOBnFxLjAg" base_Element="_eeg0MvIUEeqcDOBnFxLjAg"/>
+  <UMLLabProfile:Annotations xmi:id="_eeiCUPIUEeqcDOBnFxLjAg" base_Element="_eeg0MvIUEeqcDOBnFxLjAg">
+    <annotations xmi:id="_eeiCUfIUEeqcDOBnFxLjAg" name="Test"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_eeipYPIUEeqcDOBnFxLjAg" base_Element="_eeiCUvIUEeqcDOBnFxLjAg"/>
+  <UMLLabProfile:Annotations xmi:id="_eejQcPIUEeqcDOBnFxLjAg" base_Element="_eeiCUvIUEeqcDOBnFxLjAg">
+    <annotations xmi:id="_eejQcfIUEeqcDOBnFxLjAg" name="Test"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_eej3gPIUEeqcDOBnFxLjAg" base_Element="_eejQcvIUEeqcDOBnFxLjAg"/>
+  <UMLLabProfile:Annotations xmi:id="_eekekPIUEeqcDOBnFxLjAg" base_Element="_eejQcvIUEeqcDOBnFxLjAg">
+    <annotations xmi:id="_eekekfIUEeqcDOBnFxLjAg" name="Test"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_eelFoPIUEeqcDOBnFxLjAg" base_Element="_eekekvIUEeqcDOBnFxLjAg"/>
+  <UMLLabProfile:Annotations xmi:id="_eelssPIUEeqcDOBnFxLjAg" base_Element="_eekekvIUEeqcDOBnFxLjAg">
+    <annotations xmi:id="_eelssfIUEeqcDOBnFxLjAg" name="Test"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_eemTwPIUEeqcDOBnFxLjAg" base_Element="_eelssvIUEeqcDOBnFxLjAg"/>
+  <UMLLabProfile:Annotations xmi:id="_eem60PIUEeqcDOBnFxLjAg" base_Element="_eelssvIUEeqcDOBnFxLjAg">
+    <annotations xmi:id="_eem60fIUEeqcDOBnFxLjAg" name="Test"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_eeoI8PIUEeqcDOBnFxLjAg" base_Element="_eem60vIUEeqcDOBnFxLjAg"/>
+  <UMLLabProfile:Annotations xmi:id="_eeowAPIUEeqcDOBnFxLjAg" base_Element="_eem60vIUEeqcDOBnFxLjAg">
+    <annotations xmi:id="_eeowAfIUEeqcDOBnFxLjAg" name="Test"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_eepXEPIUEeqcDOBnFxLjAg" base_Element="_eeowAvIUEeqcDOBnFxLjAg"/>
+  <UMLLabProfile:Annotations xmi:id="_eep-IPIUEeqcDOBnFxLjAg" base_Element="_eeowAvIUEeqcDOBnFxLjAg">
+    <annotations xmi:id="_eep-IfIUEeqcDOBnFxLjAg" name="Test"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_eerMQPIUEeqcDOBnFxLjAg" base_Element="_eeqlMPIUEeqcDOBnFxLjAg"/>
+  <UMLLabProfile:Annotations xmi:id="_eerMQfIUEeqcDOBnFxLjAg" base_Element="_eeqlMPIUEeqcDOBnFxLjAg">
+    <annotations xmi:id="_eerMQvIUEeqcDOBnFxLjAg" name="Test"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ee7q8PIUEeqcDOBnFxLjAg" base_Element="_ee5OsPIUEeqcDOBnFxLjAg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ee85EPIUEeqcDOBnFxLjAg" base_Element="_ee7q8fIUEeqcDOBnFxLjAg"/>
+  <UMLLabProfile:Reference xmi:id="_efEN0PIUEeqcDOBnFxLjAg" base_Element="_efCYoPIUEeqcDOBnFxLjAg"/>
+  <UMLLabProfile:Reference xmi:id="_efFb8PIUEeqcDOBnFxLjAg" base_Element="_efEN0fIUEeqcDOBnFxLjAg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_iQ1PQPIUEeqcDOBnFxLjAg" base_Element="_iQ0BIPIUEeqcDOBnFxLjAg"/>
+  <UMLLabProfile:Annotations xmi:id="_iQ12UPIUEeqcDOBnFxLjAg" base_Element="_iQ0BIPIUEeqcDOBnFxLjAg">
+    <annotations xmi:id="_iQ12UfIUEeqcDOBnFxLjAg" name="RunWith">
+      <annotationParameters xmi:id="_iQ12UvIUEeqcDOBnFxLjAg" skipName="true" skipArray="true">
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_iQ3EcPIUEeqcDOBnFxLjAg" value="Suite.class"/>
+      </annotationParameters>
+    </annotations>
+    <annotations xmi:id="_iQ12U_IUEeqcDOBnFxLjAg" name="SuiteClasses">
+      <annotationParameters xmi:id="_iQ12VPIUEeqcDOBnFxLjAg" skipName="true">
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_iQ3EcfIUEeqcDOBnFxLjAg" value="CartServiceTest.class"/>
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_iQ3EcvIUEeqcDOBnFxLjAg" value="ShoppingCartTest.class"/>
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_iQ3Ec_IUEeqcDOBnFxLjAg" value="BankTest.class"/>
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_iQ3rgPIUEeqcDOBnFxLjAg" value="PaymentServiceTest.class"/>
+      </annotationParameters>
+    </annotations>
+  </UMLLabProfile:Annotations>
+</xmi:XMI>
