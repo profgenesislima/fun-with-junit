@@ -2,6 +2,7 @@ package br.edu.ifpb.shoppingcart.entity;
 
 import static org.junit.Assert.assertTrue;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
 
 import java.math.BigDecimal;
 import java.util.NoSuchElementException;
@@ -94,6 +95,7 @@ public class ShoppingCartTest {
 
 		assertTrue(cart.getItems().size() < tamanhoAntesRemocao);
 		assertEquals("LEGO Duplo",cart.getItems().get(0).getProduct().getName());
+		assertFalse(cart.getItems().contains(p));
 		
 	}
 	
