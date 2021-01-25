@@ -16,6 +16,7 @@ public class BankTest {
 
 	Bank operator;
 	Customer customer;
+	
 	@Before
 	public void initialize() {
 		customer = new Customer();
@@ -33,8 +34,7 @@ public class BankTest {
 	
 	@Test
 	public void testaSaqueDoPagamento() {
-		this.operator.withdraw(new BigDecimal("5000.00"));
-		
+		this.operator.withdraw(new BigDecimal("5000.00"));		
 		assertEquals(new BigDecimal("5000.00"),this.operator.getCustomerCredit(customer));
 	}
 }

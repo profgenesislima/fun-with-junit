@@ -36,10 +36,7 @@ public class ShoppingCartTest {
 	
 	
 	
-	@After
-	public void finalize() {
-		cart.getItems().clear();
-	}
+	
 	
 	@Test
 	public void testaValorCarrinhoVazio() {
@@ -143,6 +140,27 @@ public class ShoppingCartTest {
 		
 		assertTrue(cart.getItems().size() == 0);
 		
+	}
+	
+	@Test
+	public void testaAtualizarProdutoComQuantitativoMenorOuIgualZero() {
+		//Dado
+		cart.add(product, 1);
+		assertTrue(cart.getItems().size() == 1);
+
+		//Quando
+		boolean resultado = cart.updateQuantity(product, 0);
+		
+		//Então
+		assertEquals(false, resultado);
+		
+		//E...
+		assertTrue(cart.getItems().get(0).getQuantity() == 1);
+	}
+	
+	@After
+	public void finalize() {
+		cart.getItems().clear();
 	}
 	
 	

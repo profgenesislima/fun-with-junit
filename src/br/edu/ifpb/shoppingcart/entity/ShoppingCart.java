@@ -6,16 +6,21 @@ import java.util.Iterator;
 import java.util.List;
 
 public class ShoppingCart {
+
 	private List<Item> items = new ArrayList<Item>();
 	
 	public void add(Product product,int quantity) {	
-		if(product != null && quantity > 0)
+		if(isItemValid(product, quantity))
 		items.add(new Item(product,quantity));			
 		}
+
+	private boolean isItemValid(Product product, int quantity) {
+		return product != null && quantity > 0;
+	}
 	
 	public boolean updateQuantity(Product product, int quantity) {
 		Item item = this.findProduct(product);
-		if(item != null){
+		if(item != null && quantity > 0){
 			item.setQuantity(quantity);			
 			return true;
 		}
@@ -24,16 +29,16 @@ public class ShoppingCart {
 	
 	public void remove(Product product) {
 		//com Lambda ficaria:
-		//items.remove(findProduct(product));
+		items.remove(findProduct(product));
 		
-		for(Item item:items) {
-			if(item.getProduct().equals(product)) {
-			   Item found = item;
-			   items.remove(found);
-			   break;
-			}
-
-		}
+//		for(Item item:items) {
+//			if(item.getProduct().equals(product)) {
+//			   Item found = item;
+//			   items.remove(found);
+//			   break;
+//			}
+//
+//		}
 	}
 	
 	public BigDecimal getTotal() {
